@@ -51,6 +51,15 @@ body {
 ul {
   list-style: none;
 }
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+img {
+  width: auto;
+  height: auto;
+}
 .flex-center {
   display: flex;
   justify-content: center;
