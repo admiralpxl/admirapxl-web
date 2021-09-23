@@ -12,7 +12,7 @@ class MyDocument extends Document {
         <script src="https://kit.fontawesome.com/b2a05ad3f8.js" crossorigin="anonymous"></script>
         <meta name="theme-color" content="#1f1f1f"/>
         <link rel="icon" type="image/png" sizes="16x16" href={ url }></link>
-        <title>Junior Carrillo - Frontend Developer </title>
+        <title> Admiralpxl </title>
         <meta name="description" content="A minimalist programmer who love the challenge"></meta>
         </Head>
         <body className="container">
