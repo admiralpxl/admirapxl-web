@@ -2,25 +2,24 @@ import React from "react";
 
 function IconLinks(props) {
     return(
+        <>
         <a href={ props.url }
             className="flex-center">
-            <span className={ props.name }>
+            <span className={ props.iconName }>
             </span>
-            <style jsx>{`
+        </a>
+        <style jsx>{`
             a {
                 width: 50px;
                 height: 50px;
                 font-size: 3.5rem;
+                border-radius: 10px;
                 background-color: var(--white);
                 color: var(--black);
-                transition: all 8s ease;
-            }
-            a:hover {
-                background-color: var(--blue);
             }
             `}
             </style>
-        </a>
+        </>
     );
 }
 
