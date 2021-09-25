@@ -7,8 +7,6 @@ const Layout = ({ children }) => {
   return (
     <>
       <Navbar />
-      <Links />
-      <NavLinks />
 
       {children}
       <footer>Este es mi footer</footer>
