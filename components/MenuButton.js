@@ -6,7 +6,7 @@ function MenuButton(props) {
       <button 
       className="btn-icon flex-center"
       onClick={ props.onMenu }>
-        <span className={ props.icon }></span>
+        <span aria-hidden className={ props.icon } />
       </button>
       <style jsx>{`
         .btn-icon {
