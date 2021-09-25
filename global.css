@@ -73,6 +73,14 @@ a {
   justify-content: space-between;
   align-items: center;
 }
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.center {
+  justify-content: center;
+  align-items: center;
+}
 @media (min-width: 768px) {
   body {
     padding: 30px;
