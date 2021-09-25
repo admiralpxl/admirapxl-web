@@ -1,15 +1,13 @@
 import React, { FC, ReactNode } from "react";
 import { Navbar } from "./Navbar";
-import { Links } from "./Links";
-import { NavLinks } from "./NavLinks";
+import { Footer } from "./Footer";
 
 const Layout = ({ children }) => {
   return (
     <>
       <Navbar />
-
       {children}
-      <footer>Este es mi footer</footer>
+      <Footer />
     </>
   );
 };
