@@ -28,7 +28,9 @@ function Home() {
           width: 100%;
           height: auto;
           display: grid;
-          margin-top: 48px;
+          margin-top: 20px;
+          justify-content: center;
+          padding: 20px;
         }
         .intro-links {
           width: 230px;
@@ -40,8 +42,7 @@ function Home() {
         }
         a {
           width: auto;
-          height: 40px;
-          padding-bottom: 4px;
+          height: 32px;
           color: var(--white);
           border-bottom: 2px solid var(--white);
           padding-right: 8px;
@@ -49,6 +50,19 @@ function Home() {
           font-weight: var(--bold);
           background-color: transparent;
           font-family: var(--merri);
+        }
+        @media (min-width: 768px) {
+          .intro {
+            justify-content: start;
+            width: 650px;
+            margin-left: 10%;
+          }
+        }
+        @media (min-width: 1100px) {
+          .intro {
+            margin-top: 60px;
+            margin-left: 8%;
+          }
         }
       `}</style>
     </section>

@@ -40,13 +40,13 @@ html {
   font-family: var(--merri);
 }
 body {
-  padding: 20px;
   width: 100vw;
   height: 100vh;
   background-image: url("https://images.pexels.com/photos/2098428/pexels-photo-2098428.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  position: relative;
 }
 ul {
   list-style: none;
@@ -77,6 +77,11 @@ a {
   display: flex;
   flex-direction: column;
 }
+.grid-center {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
 .center {
   justify-content: center;
   align-items: center;
@@ -91,12 +96,9 @@ a {
   font-size: var(--sub-title-intro-mobile);
   font-weight: var(--regular);
   width: 100%;
-  max-width: 500px;
+  max-width: 650px;
 }
 @media (min-width: 768px) {
-  body {
-    padding: 30px;
-  }
   .title {
     font-size: var(--title-intro-tablet);
   }
@@ -105,9 +107,6 @@ a {
   }
 }
 @media (min-width: 1100px) {
-  body {
-    padding: 42px;
-  }
   .title {
     font-size: var(--title-intro-desktop);
   }

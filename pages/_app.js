@@ -1,17 +1,18 @@
-import App from 'next/app'
-import Layout from '../components/Layout';
-import '../global.css';
+import App from "next/app";
+import Layout from "../components/Layout";
+import "../global.css";
 
 function MyApp({ Component, pageProps }) {
-    //Providers -- Context, Theme, data
-    //Layout
-    //props adicionales
+  //Providers -- Context, Theme, data
+  //Layout
+  //props adicionales
   return (
+    <>
       <Layout>
-
-  <Component {...pageProps} />
-  </Layout>
-  )
+        <Component {...pageProps} />
+      </Layout>
+    </>
+  );
 }
 
 // Only uncomment this method if you have blocking data requirements for
@@ -26,4 +27,4 @@ function MyApp({ Component, pageProps }) {
 //   return { ...appProps }
 // }
 
-export default MyApp
+export default MyApp;

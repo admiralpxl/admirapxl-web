@@ -28,8 +28,9 @@ function Navbar() {
       <style jsx>{`
         header {
           width: 100%;
-          height: 50px;
+          height: auto;
           font-family: var(--quick);
+          padding: 20px;
         }
         ul {
           width: 100%;
