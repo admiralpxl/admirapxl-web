@@ -1,11 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import { NavButton } from "./NavButton";
-import { IconLinks } from "./IconLinks";
+import { NavLinks } from "./NavLinks";
 
 function Navbar() {
+  const [openMenu, setOpenMenu] = React.useState(false);
+  const [size, setSize] = React.useState("");
+
+  const sizeScreen = () => {
+    let size = screen.width;
+    setSize(size);
+  };
+
   return (
-    <header>
+    <header onChange={sizeScreen}>
       <nav>
         <ul>
           <li>
@@ -15,14 +23,17 @@ function Navbar() {
               </figure>
             </Link>
           </li>
-          <li>
-            <NavButton
-              onMenu={() => {
-                console.log("evento que abre el menu aqui");
-              }}
-              icon="fas fa-bars"
-            />
-          </li>
+          {size < 1100 && (
+            <li>
+              <NavButton onMenu={sizeScreen} icon="fas fa-bars" />
+            </li>
+          )}
+
+          {size > 1100 && (
+            <li>
+              <NavLinks />
+            </li>
+          )}
         </ul>
       </nav>
       <style jsx>{`

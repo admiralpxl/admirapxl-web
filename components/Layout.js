@@ -6,7 +6,6 @@ import { Menu } from "./Menu";
 const Layout = ({ children }) => {
   return (
     <>
-      <Menu />
       <Navbar />
       {children}
       <Footer />

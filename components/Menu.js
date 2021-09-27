@@ -75,9 +75,6 @@ function Menu() {
             flex-direction: column;
             align-self: start;
           }
-          .menu-contact {
-            transform: rotate(90deg);
-          }
           ul {
             margin-top: 48px;
           }

@@ -37,7 +37,7 @@ function Links() {
         }
         @media (min-width: 1100px) {
           li {
-            font-size: var(--title);
+            font-size: 2.8rem;
           }
         }
       `}</style>
