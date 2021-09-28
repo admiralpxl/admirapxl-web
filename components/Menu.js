@@ -6,16 +6,11 @@ import { Contact } from "./Contact";
 import { IconLinks } from "./IconLinks";
 import { Footer } from "./Footer";
 
-function Menu() {
+function Menu(props) {
   return (
     <section className="menu">
       <article className="menu-button">
-        <NavButton
-          onMenu={() => {
-            console.log("hola");
-          }}
-          icon="fas fa-times"
-        />
+        <NavButton onMenu={props.event} icon="fas fa-times" />
       </article>
       <Logo />
       <ul>
