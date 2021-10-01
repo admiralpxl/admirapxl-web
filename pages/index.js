@@ -1,9 +1,17 @@
 import React from "react";
 import Link from "next/link";
+import { IconLinks } from "../components/IconLinks";
 
 function Home() {
+  const [size, setSize] = React.useState("");
+
+  const sizeScreen = () => {
+    let size = screen.width;
+    console.log(size);
+    setSize(size);
+  };
   return (
-    <section className="intro">
+    <section className="intro" onLoad={sizeScreen}>
       <h1 className="title">
         Hi I´m, <br />
         Junior Carrillo <br />
@@ -18,8 +26,31 @@ function Home() {
           <a>Portfolio</a>
         </Link>
       </article>
+      {size > 1100 && (
+        <article className="menu-set">
+          <IconLinks
+            url="https://github.com/admiralpxl/"
+            iconName="fab fa-github"
+          />
+          <IconLinks
+            url="https://twitter.com/admiralpxl?s=08"
+            iconName="fab fa-twitter"
+          />
+          <IconLinks
+            url="https://www.linkedin.com/in/admiralpxl/"
+            iconName="fab fa-linkedin-in"
+          />
+        </article>
+      )}
 
       <style jsx>{`
+        .menu-set {
+          display: flex;
+          gap: 8px;
+          position: absolute;
+          right: 10px;
+          bottom: 12px;
+        }
         .intro {
           width: 100%;
           height: auto;

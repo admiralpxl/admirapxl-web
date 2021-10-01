@@ -1,29 +1,26 @@
 import React from "react";
 import { IconLinks } from "./IconLinks";
 
-function ProjectSlide() {
+function ProjectSlide(props) {
   return (
     <article className="project flex-column center">
-      <h3>01</h3>
-      <h2>Forescast today app</h2>
-      <p>
-        The app use OpenWeather API to get the information and show it through
-        DOM manipulation and using AJAX template.
-      </p>
+      <h3>{props.number}</h3>
+      <h2>{props.title}</h2>
+      <p>{props.info}</p>
       <section className="project-links flex-around">
-        <IconLinks url="#" iconName="fas fa-laptop" />
-        <IconLinks url="#" iconName="far fa-hdd" />
+        <IconLinks url={props.web} iconName="fas fa-laptop" />
+        <IconLinks url={props.repo} iconName="far fa-hdd" />
       </section>
       <section className="project-techno">
         <h4>technology uses</h4>
-        <p>HTML | CSS | VANILLA JAVASCRIPT</p>
+        <p>{props.techno}</p>
       </section>
       <style jsx>{`
         .project {
-          width: 100%;
-          max-width: 400px;
+          min-width: 320px;
+          max-width: 350px;
           padding: 0 10px;
-          height: auto;
+          height: 420px;
           background: rgba(31, 31, 31, 0.25);
           box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
           backdrop-filter: blur(4px);
@@ -39,6 +36,7 @@ function ProjectSlide() {
           font-size: var(--title);
           font-weight: var(--bold);
           margin-bottom: 4px;
+          text-align: center;
         }
         .project p {
           font-size: var(--little);
@@ -48,7 +46,7 @@ function ProjectSlide() {
           margin-bottom: 12px;
         }
         .project-links {
-          width: 200px;
+          width: 140px;
           margin-bottom: 8px;
         }
         .project-techno {

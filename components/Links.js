@@ -15,7 +15,9 @@ function Links() {
         </Link>
       </li>
       <li>
-        <a href="#">RESUME</a>
+        <a href="https://drive.google.com/file/d/1breKWsUTXV2-gRSp_ApIbIVSklm5fSYS/view?usp=sharing">
+          RESUME
+        </a>
       </li>
       <style jsx>{`
         li {

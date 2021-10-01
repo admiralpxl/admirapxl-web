@@ -3,6 +3,8 @@
   --white: #f9f9f9;
   --black: #1f1f1f;
   --blue: #4298b3;
+  --blue-opacity: #4299b327;
+  --black-opacity: #1f1f1f57;
   /*fonts*/
   --merri: "Merriweather", serif;
   --quick: "Quicksand", sans-serif;
@@ -47,6 +49,19 @@ body {
   background-image: url("https://images.pexels.com/photos/433155/pexels-photo-433155.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   background-position: center;
   position: relative;
+}
+::-webkit-scrollbar {
+  width: 8px; /* width of the entire scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: var(--blue-opacity); /* color of the tracking area */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--black-opacity); /* color of the scroll thumb */
+  border-radius: 10px; /* roundness of the scroll thumb */
+  border: 2px solid var(--white); /* creates padding around scroll thumb */
 }
 ul {
   list-style: none;
