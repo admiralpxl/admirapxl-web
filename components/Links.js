@@ -15,11 +15,6 @@ function Links() {
         </Link>
       </li>
       <li>
-        <Link href="/about">
-          <a>ABOUT</a>
-        </Link>
-      </li>
-      <li>
         <a href="#">RESUME</a>
       </li>
       <style jsx>{`

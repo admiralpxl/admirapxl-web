@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { NavButton } from "./NavButton";
 import { NavLinks } from "./NavLinks";
-import { Menu } from "./Menu";
+import { Modal } from "./Modal";
 
 function Navbar() {
   const [openMenu, setOpenMenu] = React.useState(false);
@@ -10,14 +10,21 @@ function Navbar() {
 
   const sizeScreen = () => {
     let size = screen.width;
+    console.log(size);
     setSize(size);
   };
 
-  const mobileMenu = () => {};
+  const mobileMenu = () => {
+    if (!openMenu) {
+      setOpenMenu(true);
+    } else {
+      setOpenMenu(false);
+    }
+  };
 
   return (
     <>
-      <header onChange={sizeScreen}>
+      <header onLoad={sizeScreen}>
         <nav>
           <ul>
             <li>
@@ -29,12 +36,7 @@ function Navbar() {
             </li>
             {size < 1100 && (
               <li>
-                <NavButton
-                  onMenu={() => {
-                    console.log("TODO: abrir el menu");
-                  }}
-                  icon="fas fa-bars"
-                />
+                <NavButton onMenu={mobileMenu} icon="fas fa-bars" />
               </li>
             )}
 
@@ -68,6 +70,7 @@ function Navbar() {
           }
         `}</style>
       </header>
+      {openMenu && <Modal className="modal" modalEvent={mobileMenu} />}
     </>
   );
 }

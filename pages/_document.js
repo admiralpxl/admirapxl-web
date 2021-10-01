@@ -1,27 +1,38 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document';
+import Document, { Html, Head, Main, NextScript } from "next/document";
 
 class MyDocument extends Document {
-
-
   render() {
-    
     return (
       <Html>
         <Head>
-        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Quicksand:wght@300;400&display=swap" rel="stylesheet" />
-        <script src="https://kit.fontawesome.com/b2a05ad3f8.js" crossorigin="anonymous"></script>
-        <meta name="theme-color" content="#1f1f1f"/>
-        <link rel="icon" type="image/png" sizes="16x16" href="isotipo.png"></link>
-        <title> Admiralpxl </title>
-        <meta name="description" content="A minimalist programmer who love the challenge"></meta>
+          <link
+            href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Quicksand:wght@300;400&display=swap"
+            rel="stylesheet"
+          />
+          <script
+            src="https://kit.fontawesome.com/b2a05ad3f8.js"
+            crossorigin="anonymous"
+          ></script>
+          <meta name="theme-color" content="#1f1f1f" />
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="isotipo.png"
+          ></link>
+          <title> Admiralpxl </title>
+          <meta
+            name="description"
+            content="A minimalist programmer who love the challenge"
+          ></meta>
         </Head>
         <body className="container">
           <Main />
           <NextScript />
         </body>
       </Html>
-    )
+    );
   }
 }
 
-export default MyDocument
+export default MyDocument;

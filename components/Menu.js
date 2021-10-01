@@ -8,7 +8,7 @@ import { Footer } from "./Footer";
 
 function Menu(props) {
   return (
-    <section className="menu">
+    <>
       <article className="menu-button">
         <NavButton onMenu={props.event} icon="fas fa-times" />
       </article>
@@ -36,13 +36,6 @@ function Menu(props) {
       <Footer />
 
       <style jsx>{`
-        .menu {
-          width: 100%;
-          height: 100vh;
-          background-color: var(--black);
-          position: fixed;
-          z-index: 1;
-        }
         .menu-button {
           display: flex;
           padding-right: 12px;
@@ -75,7 +68,7 @@ function Menu(props) {
           }
         }
       `}</style>
-    </section>
+    </>
   );
 }
 

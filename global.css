@@ -18,8 +18,8 @@
   --sub-title-intro-desktop: 2.4rem;
   --normal: 1.8rem;
   --little: 1.6rem;
-  --title: 3rem;
-  --big: 20rem;
+  --title: 2.8rem;
+  --big: 15rem;
   --stack: 2rem;
   --menu: 3.8rem;
   --logo-font: 2.8rem;
@@ -42,9 +42,9 @@ html {
 body {
   width: 100vw;
   height: 100vh;
-  background-image: url("https://images.pexels.com/photos/2098428/pexels-photo-2098428.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   background-repeat: no-repeat;
   background-size: cover;
+  background-image: url("https://images.pexels.com/photos/433155/pexels-photo-433155.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   background-position: center;
   position: relative;
 }
@@ -73,6 +73,11 @@ a {
   justify-content: space-between;
   align-items: center;
 }
+.flex-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 .flex-column {
   display: flex;
   flex-direction: column;
@@ -97,6 +102,13 @@ a {
   font-weight: var(--regular);
   width: 100%;
   max-width: 650px;
+}
+.modal {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--black);
+  position: fixed;
+  z-index: 1;
 }
 @media (min-width: 768px) {
   .title {

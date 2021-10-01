@@ -14,10 +14,6 @@ function Home() {
         minimalist.
       </p>
       <article className="intro-links flex-between">
-        <Link href="/about">
-          <a>About me</a>
-        </Link>
-
         <Link href="/portfolio">
           <a>Portfolio</a>
         </Link>
