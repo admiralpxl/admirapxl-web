@@ -1,76 +1,49 @@
-import React, { useState } from "react";
+import React from "react";
 import Link from "next/link";
-import { NavButton } from "./NavButton";
-import { NavLinks } from "./NavLinks";
-import { Modal } from "./Modal";
 
 function Navbar() {
-  const [openMenu, setOpenMenu] = React.useState(false);
-  const [size, setSize] = React.useState("");
-
-  const sizeScreen = () => {
-    let size = screen.width;
-    console.log(size);
-    setSize(size);
-  };
-
-  const mobileMenu = () => {
-    if (!openMenu) {
-      setOpenMenu(true);
-    } else {
-      setOpenMenu(false);
-    }
-  };
-
   return (
     <>
-      <header onLoad={sizeScreen}>
-        <nav>
-          <ul>
-            <li>
-              <Link href="/">
-                <figure>
-                  <img src="logotipo.png" alt="logo" />
-                </figure>
-              </Link>
-            </li>
-            {size < 1100 && (
-              <li>
-                <NavButton onMenu={mobileMenu} icon="fas fa-bars" />
-              </li>
-            )}
-
-            {size > 1100 && (
-              <li>
-                <NavLinks />
-              </li>
-            )}
-          </ul>
-        </nav>
+      <nav>
+        <ul className="flex-around">
+          <li>
+            <Link href="/about">
+              <a>ABOUT ME</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/">
+              <figure>
+                <img src="isotipo-vector.svg" alt="logo" />
+              </figure>
+            </Link>
+          </li>
+          <li>
+            <Link href="/portfolio">
+              <a>PORTFOLIO</a>
+            </Link>
+          </li>
+        </ul>
         <style jsx>{`
-          header {
+          nav {
             width: 100%;
-            height: auto;
+            height: 80px;
             font-family: var(--quick);
-            padding: 20px;
           }
           ul {
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
+            margin: 0 auto;
           }
           figure {
-            width: 225px;
-            height: 50px;
-            cursor: pointer;
+            width: 70px;
+            height: 70px;
           }
           a {
-            color: var(--blue);
-            font-size: 1.8rem;
+            font-size: var(--nav);
+            font-weight: var(--bold);
+            color: var(--white);
           }
         `}</style>
-      </header>
-      {openMenu && <Modal className="modal" modalEvent={mobileMenu} />}
+      </nav>
     </>
   );
 }

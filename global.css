@@ -21,9 +21,7 @@
   --normal: 1.8rem;
   --little: 1.6rem;
   --title: 2.8rem;
-  --big: 15rem;
-  --stack: 2rem;
-  --menu: 3.8rem;
+  --nav: 2rem;
   --logo-font: 2.8rem;
   /*fonts-weight*/
   --light: 300;
@@ -40,15 +38,6 @@ html {
   color: var(--white);
   background-color: var(--black);
   font-family: var(--merri);
-}
-body {
-  width: 100vw;
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url("https://images.pexels.com/photos/433155/pexels-photo-433155.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-  background-position: center;
-  position: relative;
 }
 ::-webkit-scrollbar {
   width: 8px; /* width of the entire scrollbar */
@@ -117,13 +106,6 @@ a {
   font-weight: var(--regular);
   width: 100%;
   max-width: 650px;
-}
-.modal {
-  width: 100%;
-  height: 100vh;
-  background-color: var(--black);
-  position: fixed;
-  z-index: 1;
 }
 @media (min-width: 768px) {
   .title {

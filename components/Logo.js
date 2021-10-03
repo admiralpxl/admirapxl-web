@@ -6,7 +6,7 @@ function Logo() {
       <figure>
         <img src="isotipo-vector.svg" alt="Logotipo" />
       </figure>
-      <h3>ADMIRALPXL</h3>
+      <h3>GARPOCODE</h3>
       <style jsx>{`
         section {
           width: 100%;
