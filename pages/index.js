@@ -48,10 +48,11 @@ function Home() {
           max-width: 620px;
         }
         .home-media {
-          width: auto;
+          width: 194px;
           height: 50px;
           display: flex;
           gap: 16px;
+          justify-content: space-around;
           position: absolute;
           bottom: 20px;
           right: 12px;
