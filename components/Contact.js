@@ -9,9 +9,10 @@ function Contact() {
           width: 150px;
           height: 40px;
           font-family: var(--merri);
-          font-size: 2rem;
+          font-size: var(--contact);
           font-weight: var(--bold);
           border-radius: 10px;
+          border: 2px solid var(--white);
           background-color: var(--blue);
           color: var(--white);
         }

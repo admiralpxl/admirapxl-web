@@ -9,19 +9,14 @@
   --merri: "Merriweather", serif;
   --quick: "Quicksand", sans-serif;
   /*fonts-size*/
-  --title-intro-mobile: 3.4rem;
-  --title-intro-tablet: 4.4rem;
-  --title-intro-desktop: 4rem;
-  --sub-title-intro-mobile: 1.8rem;
-  --sub-title-intro-tablet: 2.8rem;
-  --sub-title-intro-desktop: 2.4rem;
-  --sub-title-intro-mobile: 1.8rem;
-  --sub-title-intro-tablet: 2.8rem;
-  --sub-title-intro-desktop: 2.4rem;
+  --title-home-mobile: 3rem;
+  --title-home-tablet: 4.4rem;
+  --title-home-desktop: 4rem;
   --normal: 1.8rem;
   --little: 1.6rem;
   --title: 2.8rem;
   --nav: 2rem;
+  --contact: 2rem;
   --logo-font: 2.8rem;
   /*fonts-weight*/
   --light: 300;
@@ -66,6 +61,9 @@ img {
 }
 a {
   text-decoration: none;
+}
+.padding {
+  padding: 12px;
 }
 .flex-center {
   display: flex;

@@ -8,6 +8,8 @@ function Header() {
       <style jsx>{`
         header {
           width: 100%;
+          max-width: 500px;
+          margin: 0 auto;
           height: auto;
           padding: 12px;
           margin-bottom: 20px;

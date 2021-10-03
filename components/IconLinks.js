@@ -13,8 +13,9 @@ function IconLinks(props) {
             height: 50px;
             font-size: 3.5rem;
             border-radius: 10px;
-            background-color: var(--white);
-            color: var(--black);
+            border: 2px solid var(--white);
+            background-color: var(--black);
+            color: var(--white);
           }
         `}
       </style>
