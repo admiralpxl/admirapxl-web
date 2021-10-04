@@ -33,6 +33,9 @@ function Home() {
         />
       </article>
       <style jsx>{`
+        .home {
+          padding-bottom: 0px;
+        }
         .home h2 {
           font-size: var(--title-home-mobile);
           font-weight: var(--bold);
@@ -71,7 +74,6 @@ function Home() {
           .home,
           .home-me {
             padding-top: 8px;
-            padding-bottom: 8px;
             width: 620px;
           }
           .home-me {

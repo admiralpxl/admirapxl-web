@@ -14,7 +14,7 @@
   --title-home-desktop: 4rem;
   --normal: 1.8rem;
   --little: 1.6rem;
-  --title: 2.8rem;
+  --title: 3.8rem;
   --nav: 2rem;
   --contact: 2rem;
   --logo-font: 2.8rem;
@@ -94,30 +94,15 @@ a {
   align-items: center;
 }
 .title {
-  font-size: var(--title-intro-mobile);
+  font-size: var(--title);
   font-weight: var(--bold);
+  color: var(--blue);
   width: 100%;
-  max-width: 500px;
 }
-.sub-title {
-  font-size: var(--sub-title-intro-mobile);
+.paraghrap {
+  font-size: var(--normal);
   font-weight: var(--regular);
+  line-height: 2.4rem;
   width: 100%;
-  max-width: 650px;
-}
-@media (min-width: 768px) {
-  .title {
-    font-size: var(--title-intro-tablet);
-  }
-  .sub-title {
-    font-size: var(--sub-title-intro-tablet);
-  }
-}
-@media (min-width: 1100px) {
-  .title {
-    font-size: var(--title-intro-desktop);
-  }
-  .sub-title {
-    font-size: var(--sub-title-intro-desktop);
-  }
+  max-width: 700px;
 }
