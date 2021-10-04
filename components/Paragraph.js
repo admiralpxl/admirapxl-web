@@ -1,16 +1,16 @@
 import React from "react";
 
-function Paraghrap(props) {
+function Paragraph(props) {
   return (
-    <p className="paraghrap">
+    <p className="paragraph">
       {props.content}
       <style jsx>{`
         p {
-          padding-bottom: 8px;
+          padding-bottom: 24px;
         }
       `}</style>
     </p>
   );
 }
 
-export { Paraghrap };
+export { Paragraph };

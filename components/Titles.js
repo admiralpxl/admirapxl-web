@@ -6,7 +6,7 @@ function Titles(props) {
       {props.title}
       <style jsx>{`
         h2 {
-          padding-bottom: 12px;
+          padding-bottom: 20px;
           font-family: var(--quick);
           font-weight: var(--bold);
         }

@@ -1,38 +1,53 @@
 import React from "react";
-import { IconLinks } from "../components/IconLinks";
 import { Titles } from "../components/Titles";
-import { Paraghrap } from "../components/Paraghrap";
+import { Paragraph } from "../components/Paragraph";
+import { Stack } from "../components/Stack";
+import { SecondLink } from "../components/SecondLink";
 
 function About() {
   return (
-    <section>
-      <article>
+    <section className="about-me">
+      <article className="about padding flex-column">
         <Titles title="ABOUT ME" />
-        <Paraghrap
+        <Paragraph
           content="I got into the programming world thanks the videogame specifically on
           a GameJam was take place in 2020, I participate like an artist
           (pixelart style) ironic right but not much because that pushing me to
           explore and get more knowledge about the programming world and know
           the possibility that gives to everyone."
         />
-        <Paraghrap
+        <Paragraph
           content="I’ve knowledge on HTML, CSS and JAVASCRIPT, actually learning React.js
           with the Next.js Framework on my way to becoming a good frontend I
           also learn about UI and UX."
         />
-        <Paraghrap
+        <Paragraph
           content="Also, I like Crypto and how this is changing the world I’m constaly
           adquire knowledge about this technology."
         />
+        <SecondLink
+          url="https://drive.google.com/file/d/1breKWsUTXV2-gRSp_ApIbIVSklm5fSYS/view?usp=sharing"
+          iconName="fas fa-file"
+          text="Download Resume"
+        />
       </article>
-      <article>
+      <article className="about-resume"></article>
+
+      <article className="skills padding">
         <Titles title="SKILLS" />
-        <p></p>
-        <p></p>
-        <p></p>
+        <Paragraph content="I´ve proficient in HTML & CSS to build static - dynamic - interactive landing pages, knowledge-making transitions - animations on CSS and using GSAP (Javascript Library for animations) and use Gestalt UX law for improve my frontend desing. " />
+        <article>
+          <Stack />
+        </article>
       </article>
-      <article></article>
-      <style jsx>{``}</style>
+      <style jsx>{`
+        .about-me {
+          display: grid;
+        }
+        .about {
+          align-items: start;
+        }
+      `}</style>
     </section>
   );
 }

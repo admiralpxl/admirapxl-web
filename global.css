@@ -6,8 +6,8 @@
   --blue-opacity: #4299b327;
   --black-opacity: #1f1f1f57;
   /*fonts*/
-  --merri: "Merriweather", serif;
-  --quick: "Quicksand", sans-serif;
+  --quick: "Merriweather", serif;
+  --merri: "Quicksand", sans-serif;
   /*fonts-size*/
   --title-home-mobile: 3rem;
   --title-home-tablet: 4.4rem;
@@ -63,7 +63,7 @@ a {
   text-decoration: none;
 }
 .padding {
-  padding: 12px;
+  padding: 16px;
 }
 .flex-center {
   display: flex;
@@ -99,10 +99,10 @@ a {
   color: var(--blue);
   width: 100%;
 }
-.paraghrap {
+.paragraph {
   font-size: var(--normal);
   font-weight: var(--regular);
   line-height: 2.4rem;
   width: 100%;
-  max-width: 700px;
+  max-width: 730px;
 }
