@@ -7,6 +7,9 @@ function SecondLink(props) {
       <IconLinks url={props.url} iconName={props.iconName} />
       <a href={props.url}>{props.text}</a>
       <style jsx>{`
+        article {
+          margin: 8px;
+        }
         a {
           font-size: var(--normal);
           font-family: var(--quick);
