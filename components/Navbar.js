@@ -13,9 +13,7 @@ function Navbar() {
           </li>
           <li>
             <Link href="/">
-              <figure>
-                <img src="isotipo-vector.svg" alt="logo" />
-              </figure>
+              <a>HOME</a>
             </Link>
           </li>
           <li>
@@ -27,8 +25,9 @@ function Navbar() {
         <style jsx>{`
           nav {
             width: 100%;
-            height: 80px;
+            height: 20px;
             font-family: var(--quick);
+            margin-top: 20px;
           }
           ul {
             margin: 0 auto;

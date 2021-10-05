@@ -12,6 +12,7 @@ function SecondLink(props) {
           font-family: var(--quick);
           color: var(--white);
           margin-left: 8px;
+          font-weight: var(--light);
         }
       `}</style>
     </article>

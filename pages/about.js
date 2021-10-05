@@ -31,11 +31,10 @@ function About() {
           text="Download Resume"
         />
       </article>
-      <article className="about-resume"></article>
 
       <article className="skills padding">
         <Titles title="SKILLS" />
-        <Paragraph content="I´ve proficient in HTML & CSS to build static - dynamic - interactive landing pages, knowledge-making transitions - animations on CSS and using GSAP (Javascript Library for animations) and use Gestalt UX law for improve my frontend desing. " />
+        <Paragraph content="I´ve proficient in HTML & CSS to build static - dynamic - interactive landing pages, knowledge-making transitions - animations on CSS and using GSAP (Javascript Library for animations) and use Gestalt UX law to improve my frontend desing. " />
         <article>
           <Stack />
         </article>
@@ -46,6 +45,16 @@ function About() {
         }
         .about {
           align-items: start;
+        }
+        @media (min-width: 800px) {
+          .about-me {
+            grid-template-columns: 1fr 1fr;
+            margin-top: 40px;
+          }
+          .skills {
+            grid-column: 2;
+            grid-row: 1;
+          }
         }
       `}</style>
     </section>
