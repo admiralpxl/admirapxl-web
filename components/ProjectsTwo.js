@@ -1,7 +1,7 @@
 import React from "react";
 import { SecondLink } from "./SecondLink";
 
-function Projects(props) {
+function ProjectsTwo(props) {
   return (
     <article className="project">
       <figure>
@@ -65,8 +65,12 @@ function Projects(props) {
           margin-top: 4px;
         }
         @media (min-width: 768px) {
+          .project {
+            text-align: end;
+          }
           .project-link {
             width: 100%;
+            justify-content: end;
           }
           figure {
             min-height: 250px;
@@ -76,17 +80,21 @@ function Projects(props) {
           .project {
             grid-template-columns: 1fr 1fr;
             align-items: center;
+            text-align: start;
           }
           .project-info {
             width: 480px;
-            grid-column: 1;
+            grid-column: 2;
             grid-row: 1;
+          }
+          .project-link {
+            justify-content: start;
           }
           figure {
             width: 480px;
             height: 320px;
             margin: auto;
-            grid-column: 2;
+            grid-column: 1;
           }
         }
       `}</style>
@@ -94,4 +102,4 @@ function Projects(props) {
   );
 }
 
-export { Projects };
+export { ProjectsTwo };
