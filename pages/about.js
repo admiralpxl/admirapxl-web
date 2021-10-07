@@ -23,7 +23,7 @@ function About() {
         />
         <Paragraph
           content="Also, I like Crypto and how this is changing the world I’m constaly
-          adquire knowledge about this technology."
+          adquire new knowledge about technology."
         />
         <SecondLink
           url="https://drive.google.com/file/d/1breKWsUTXV2-gRSp_ApIbIVSklm5fSYS/view?usp=sharing"
