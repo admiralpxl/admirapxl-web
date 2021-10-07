@@ -51,14 +51,20 @@ function Portfolio() {
           }
           .grid-one {
             grid-column: 1;
+            max-width: 1000px;
+            justify-self: center;
           }
           .grid-two {
             grid-column: 2;
             grid-row: 2;
+            max-width: 1000px;
+            justify-self: center;
           }
           .grid-three {
             grid-column: 1;
             grid-row: 3;
+            max-width: 1000px;
+            justify-self: center;
           }
         }
         @media (min-width: 1040px) {

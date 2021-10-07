@@ -20,7 +20,7 @@ class MyDocument extends Document {
             sizes="16x16"
             href="isotipo.png"
           ></link>
-          <title>Garpodev | Junior Carrillo</title>
+          <title>ADMIRALPXL | Junior Carrillo</title>
           <meta
             name="description"
             content="A minimalist programmer who love code the future"

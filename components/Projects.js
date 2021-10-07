@@ -26,6 +26,7 @@ function Projects(props) {
           display: grid;
           margin-bottom: 40px;
           padding: 8px;
+          gap: 12px;
         }
         figure {
           width: 100%;
