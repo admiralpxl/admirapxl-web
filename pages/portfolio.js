@@ -1,10 +1,44 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { gsap } from "gsap";
+const { ScrollTrigger } = require("gsap/dist/ScrollTrigger");
 import { Projects } from "../components/Projects";
 import { ProjectsTwo } from "../components/ProjectsTwo";
 import { Titles } from "../components/Titles";
 import { Paragraph } from "../components/Paragraph";
 
 function Portfolio() {
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.defaults({
+    opacity: 0,
+    y: -30,
+  });
+
+  ScrollTrigger.defaults({
+    start: "top 98%",
+    toggleActions: "restart none none none",
+  });
+  useEffect(() => {
+    gsap.from(".grid-one", {
+      delay: 0.3,
+      ease: "bounce.out",
+      duration: 3,
+      scrollTrigger: { trigger: ".grid-one" },
+    });
+    gsap.from(".grid-two", {
+      delay: 0.6,
+      ease: "elastic.out",
+      duration: 2.8,
+      scrollTrigger: { trigger: ".grid-two" },
+    });
+    gsap.from(".grid-three", {
+      delay: 0.9,
+      ease: "expo.out",
+      duration: 2,
+      scrollTrigger: { trigger: ".grid-three" },
+    });
+  }, []);
+
   return (
     <section className="portfolio padding">
       <Titles title="Portfolio" />
