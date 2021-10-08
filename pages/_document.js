@@ -18,12 +18,12 @@ class MyDocument extends Document {
             rel="icon"
             type="image/png"
             sizes="16x16"
-            href="isotipo.png"
+            href="logotipo.png"
           ></link>
           <title>ADMIRALPXL | Junior Carrillo</title>
           <meta
             name="description"
-            content="A minimalist programmer who love code the future"
+            content="A programmer who love code the future."
           ></meta>
         </Head>
         <body className="container">

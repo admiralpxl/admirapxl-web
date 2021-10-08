@@ -42,7 +42,7 @@ function Portfolio() {
   return (
     <section className="portfolio padding">
       <Titles title="Portfolio" />
-      <Paragraph content="Those projects help me to learn and improve more my frontend developer skills." />
+      <Paragraph content="These projects help me to learn and improve more my frontend developer skills." />
       <section className="portfolio-projects">
         <div className="grid-one">
           <Projects
