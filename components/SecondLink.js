@@ -5,7 +5,9 @@ function SecondLink(props) {
   return (
     <article className="flex-center">
       <IconLinks url={props.url} iconName={props.iconName} />
-      <a href={props.url}>{props.text}</a>
+      <a target="_blank" href={props.url}>
+        {props.text}
+      </a>
       <style jsx>{`
         article {
           margin: 8px;

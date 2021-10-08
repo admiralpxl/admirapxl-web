@@ -6,13 +6,13 @@ import { IconLinks } from "../components/IconLinks";
 function Home() {
   const boxRef = useRef();
   const q = gsap.utils.selector(boxRef);
-  const tl = gsap.timeline({ defaults: { duration: 1 } });
+  const tl = gsap.timeline({ defaults: { duration: 1, opacity: 0 } });
 
   useEffect(() => {
     tl.from(".title-animation", { y: -50, stagger: 0.33, opacity: 0 })
-      .from(".paragraph-animation", { opacity: 0 })
-      .from(".contact", { opacity: 0 }, "-=.8")
-      .from(".icon-animation", { opacity: 0, stagger: 0.4 }, "-=1");
+      .from(".paragraph-animation", {})
+      .from(".contact", {}, "-=.8")
+      .from(".icon-animation", { stagger: 0.4 }, "-=1");
   }, []);
 
   return (
