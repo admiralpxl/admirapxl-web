@@ -12,6 +12,7 @@ function Portfolio() {
   gsap.defaults({
     opacity: 0,
     y: -30,
+    ease: "elastic.out",
   });
 
   ScrollTrigger.defaults({
@@ -21,21 +22,23 @@ function Portfolio() {
   useEffect(() => {
     gsap.from(".grid-one", {
       delay: 0.3,
-      ease: "bounce.out",
       duration: 3,
       scrollTrigger: { trigger: ".grid-one" },
     });
     gsap.from(".grid-two", {
       delay: 0.6,
-      ease: "elastic.out",
       duration: 2.8,
       scrollTrigger: { trigger: ".grid-two" },
     });
     gsap.from(".grid-three", {
       delay: 0.9,
-      ease: "expo.out",
       duration: 2,
       scrollTrigger: { trigger: ".grid-three" },
+    });
+    gsap.from(".grid-four", {
+      delay: 0.9,
+      duration: 2,
+      scrollTrigger: { trigger: ".grid-four" },
     });
   }, []);
 
@@ -44,7 +47,17 @@ function Portfolio() {
       <Titles title="Portfolio" />
       <Paragraph content="These projects help me to learn and improve more my frontend developer skills." />
       <section className="portfolio-projects">
-        <div className="grid-one">
+        <div className="grid-one gridded">
+          <Projects
+            image="https://d33wubrfki0l68.cloudfront.net/616cbed5fe4d44e8064753aa/screenshot_2021-10-18-00-26-01-0000.png"
+            title="JuniorHub"
+            content="This App shows you the user information and their repositories, consulting the GitHub API, using async functions to get a more synchronous code, and the React Hooks useState to handle the information and states."
+            urlRepo="https://github.com/admiralpxl/JuniorHub"
+            urlWeb="https://juniorhub.netlify.app/"
+            techno="REACT | useState | async - await"
+          />
+        </div>
+        <div className="grid-two gridded">
           <Projects
             image="https://d33wubrfki0l68.cloudfront.net/6101f5088f644325dbbcb25a/screenshot_2021-07-29-00-23-41-0000.png"
             title="The Lion´s Song"
@@ -54,7 +67,7 @@ function Portfolio() {
             techno="SASS | CSS | VANILLA JAVASCRIPT"
           />
         </div>
-        <div className="grid-two">
+        <div className="grid-three gridded">
           <ProjectsTwo
             image="https://d33wubrfki0l68.cloudfront.net/611194b1dce5780008b8329e/screenshot_2021-08-09-20-48-53-0000.png"
             title="Forescast Today App"
@@ -64,7 +77,7 @@ function Portfolio() {
             techno="Vanilla Javascript | DOM | API Rest"
           />
         </div>
-        <div className="grid-three">
+        <div className="grid-four gridded">
           <Projects
             image="https://d33wubrfki0l68.cloudfront.net/60a17f064fde3d000776fcf7/screenshot_2021-05-16-20-22-35-0000.png"
             title="INTERACTIVE PRICE SELECTOR"
@@ -80,25 +93,27 @@ function Portfolio() {
           .portfolio-projects {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            grid-template-rows: 56px 1fr 56px 1fr;
+            grid-template-rows: 56px 1fr 56px 1fr 56px 1fr;
             grid-gap: 24px;
+          }
+          .gridded {
+            max-width: 1000px;
+            justify-self: center;
           }
           .grid-one {
             grid-column: 1;
-            max-width: 1000px;
-            justify-self: center;
           }
           .grid-two {
             grid-column: 2;
             grid-row: 2;
-            max-width: 1000px;
-            justify-self: center;
           }
           .grid-three {
             grid-column: 1;
             grid-row: 3;
-            max-width: 1000px;
-            justify-self: center;
+          }
+          .grid-four {
+            grid-column: 2;
+            grid-row: 4;
           }
         }
         @media (min-width: 1040px) {
@@ -117,6 +132,10 @@ function Portfolio() {
           .grid-three {
             grid-column: 1;
             grid-row: 3;
+          }
+          .grid-four {
+            grid-column: 1;
+            grid-row: 4;
           }
         }
       `}</style>
