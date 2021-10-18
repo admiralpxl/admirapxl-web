@@ -93,7 +93,7 @@ function Portfolio() {
           .portfolio-projects {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            grid-template-rows: 56px 1fr 56px 1fr 56px 1fr;
+            grid-template-rows: 56px 1fr 56px 1fr;
             grid-gap: 24px;
           }
           .gridded {
