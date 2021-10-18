@@ -48,7 +48,7 @@ function Portfolio() {
       <Paragraph content="These projects help me to learn and improve more my frontend developer skills." />
       <section className="portfolio-projects">
         <div className="grid-one gridded">
-          <Projects
+          <ProjectsTwo
             image="https://d33wubrfki0l68.cloudfront.net/616cbed5fe4d44e8064753aa/screenshot_2021-10-18-00-26-01-0000.png"
             title="JuniorHub"
             content="This App shows you the user information and their repositories, consulting the GitHub API, using async functions to get a more synchronous code, and the React Hooks useState to handle the information and states."
