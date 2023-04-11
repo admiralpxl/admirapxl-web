@@ -35,19 +35,19 @@ function Home() {
       <article className="home-media">
         <div className="icon-animation">
           <IconLinks
-            url="https://github.com/admiralpxl/"
+            url="https://github.com/darukbyte/"
             iconName="fab fa-github"
           />
         </div>
         <div className="icon-animation">
           <IconLinks
-            url="https://twitter.com/admiralpxl?s=08"
+            url="https://twitter.com/darukbyte"
             iconName="fab fa-twitter"
           />
         </div>
         <div className="icon-animation">
           <IconLinks
-            url="https://www.linkedin.com/in/admiralpxl/"
+            url="https://www.linkedin.com/in/darukbyte/"
             iconName="fab fa-linkedin-in"
           />
         </div>
